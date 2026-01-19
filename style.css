@@ -17,12 +17,22 @@ body {
 
 /* shared style */
 
-.about-container {
+.about-container,
+.tech-container {
     width: 70%;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 120px auto;
     border: 2px solid rgb(206, 135, 2);
+}
+
+.container-head {
+
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+
 }
 
 /* regular style */
@@ -31,14 +41,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 75px;
-}
-
-.about-context h2 {
-
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 48px;
-    margin-bottom: 16px;
 }
 
 .about-context p {
@@ -87,18 +89,119 @@ body {
 
 }
 
-@media screen and (max-width:576px) {
-    .about-container {
-        width: 90%;
+.tech-container .tech-head {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
+#TechWave-section {}
+
+.tech-container {
+    background-color: rgba(35, 14, 61, 1);
+}
+
+.tech-container .container-head {
+    text-align: center;
+}
+
+.tech-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+
+
+}
+
+.tech-cards .card {
+    /* margin: 20px; */
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(53, 17, 101, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.tech-cards .card img {
+    width: 50px;
+    height: 50px;
+    /* margin-top: 20px; */
+}
+
+.tech-cards .card h4 {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 29px;
+    /* margin-bottom: 16px; */
+}
+
+/* .tech-cards .card p {
+    line-height: 30px;
+} */
+
+
+.card1 {
+    grid-row: span 2;
+}
+
+.card2 {
+    grid-column: span 2;
+}
+
+.card3 {
+    grid-column: span 2;
+}
+
+.card4 {
+    grid-column: span 2;
+}
+
+@media screen and (max-width:576px) {
+
+    .about-container,
+    .tech-container {
+        width: 100%;
+        margin: 40px auto;
     }
 
     .about-card .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0;
 
+    }
 
+    .tech-cards {
+
+        grid-template-columns: repeat(1, 1fr);
+
+        gap: 20px;
+
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .cards {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .tech-cards .card {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .tech-cards .card img {
+        width: 40px;
+        height: 40px;
 
     }
 }
