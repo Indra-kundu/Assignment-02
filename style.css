@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter-font {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+
+}
+
+body {
+    background-color: rgba(26, 11, 46, 1);
+
+}
+
+/* shared style */
+
+.about-container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid rgb(206, 135, 2);
+}
+
+/* regular style */
+
+.about-context {
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 75px;
+}
+
+.about-context h2 {
+
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+
+.about-context p {
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.about-card .hr-line {
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin-bottom: 75px;
+    background-color: rgb(39, 29, 52)
+}
+
+.about-card .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 20px;
+    text-align: center;
+
+
+}
+
+.card h2 {
+    color: #00FF88;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 48px;
+
+
+}
+
+.card p {
+    color: #FFFFFF;
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+
+@media screen and (max-width:576px) {
+    .about-container {
+        width: 90%;
+
+    }
+
+    .about-card .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+
+
+
+    }
+}
