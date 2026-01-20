@@ -24,7 +24,8 @@ body {
 
 .about-container,
 .tech-container,
-.featured-container {
+.featured-container,
+.footer-container {
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
@@ -121,7 +122,7 @@ body {
 }
 
 .tech-cards .card {
-    /* margin: 20px; */
+
     padding: 20px;
     border-radius: 30px;
     background-color: rgba(53, 17, 101, 0.4);
@@ -305,6 +306,76 @@ body {
     border-radius: 50%;
 }
 
+.footer-section {
+    background-image: url(assets/footer-bg.png);
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid salmon; */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.footer-container h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+
+}
+
+.footer-container h6 {
+    color: #FFFFFF;
+    font-size: .75rem;
+    font-weight: 200;
+}
+
+h1 .wave {
+    background: linear-gradient(to bottom, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* WebKit=browser rendering engine */
+}
+
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: #FFFFFF;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+
+}
+
+.icon-section h6 {
+    font-size: .75rem;
+    font-weight: 200;
+}
+
+.icon img {
+    height: 15px;
+    width: 15px;
+}
+
+
+
+
+
+
+
+/* responsive-section */
 @media screen and (max-width:576px) {
 
     #about,
@@ -315,8 +386,10 @@ body {
 
     .about-container,
     .tech-container,
-    .featured-container {
-        width: 100%;
+    .featured-container,
+    .footer-container {
+        /* width: 100%; */
+        width: auto;
         margin: 0 auto;
     }
 
@@ -377,6 +450,25 @@ body {
 
         display: flex;
         flex-direction: column;
+
+    }
+
+    .footer-section {
+
+        width: 100%;
+        height: 50vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .icon-section {
+
+
+        display: grid;
+        grid-template-columns: repeat(2, .75fr);
+        gap: 2px;
 
     }
 
