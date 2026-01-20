@@ -56,38 +56,61 @@ header {
     background-position: center;
 }
 
+.nav-section .n-icon {
+    display: none;
+}
+
 .banner-section {
-    height: 100vh;
+    height: 80vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner-section .circle {
-    position: absolute;
+.banner-img {
+    /* position: absolute; */
+    position: relative;
     width: 280px;
-    height: 290px;
-    left: 485px;
-    bottom: 300px;
+    transform: translateY(-80px);
+    border: 2px solid wheat;
 }
 
-.banner-section .micro {
+.banner-img .circle {
+    /* width: 280px;
+    height: 290px; */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-img .micro {
+    /* position: absolute;
+    left: 38%;
+    bottom: 30%; */
     position: absolute;
+    top: 15%;
+    /* relative to circle */
+    left: 50%;
+    transform: translateX(-50%);
     width: 80px;
-    height: 120px;
-    left: 580px;
-    bottom: 400px;
 }
 
-.banner-section .new {
+
+
+.banner-img .new {
+    position: absolute;
     border: none;
     border-radius: 10000px;
-    cursor: pointer;
     background-color: #00FF88;
     color: #1A0B2E;
-    padding: 8px 16px 8px 16px;
-    position: absolute;
-    left: 700px;
-    top: 20px;
+    padding: 8px 16px;
+    right: -20px;
+    top: 0;
+    cursor: pointer;
 }
+
+
 
 .banner-content {
     display: flex;
@@ -97,8 +120,8 @@ header {
     padding: 0 20px;
     gap: 14px;
     position: absolute;
-    top: 350px;
-    left: 430px;
+    top: 70%;
+    left: 33%;
 }
 
 .banner-content h2 {
@@ -520,6 +543,94 @@ h1 .wave {
         margin: 0 auto;
     }
 
+    .container-head {
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 38px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    header {
+        height: 70vh;
+
+    }
+
+    .nav-section h2 {
+
+        font-size: 2rem;
+    }
+
+    .nav-section .menu {
+        display: none;
+    }
+
+    .nav-section .button-div {
+        display: none;
+    }
+
+    .nav-section .n-icon {
+        display: block;
+        font-size: 30px;
+        color: #FFFFFF;
+
+    }
+
+    .nav-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-section {
+        height: 55vh;
+        border: 2px solid wheat;
+    }
+
+    .banner-img {
+        width: 120px;
+        border: 2px solid wheat;
+        transform: translateY(-90px);
+    }
+
+    .banner-img .micro {
+        width: 35px;
+        top: 10%;
+    }
+
+    .banner-img .new {
+        padding: 4px 8px;
+        font-size: 10px;
+
+    }
+
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        gap: 14px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+
+    .banner-content h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+
+
+
     .about-card .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -596,6 +707,12 @@ h1 .wave {
         display: grid;
         grid-template-columns: repeat(2, .75fr);
         gap: 2px;
+
+    }
+
+    .footer-container h1 {
+
+        font-size: 2rem;
 
     }
 
