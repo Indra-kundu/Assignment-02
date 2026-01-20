@@ -25,7 +25,8 @@ body {
 .about-container,
 .tech-container,
 .featured-container,
-.footer-container {
+.footer-container,
+.nav-section {
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
@@ -38,11 +39,165 @@ body {
     font-weight: 600;
     line-height: 48px;
     margin-bottom: 16px;
+    text-align: center;
     color: #FFFFFF;
 
 }
 
 /* regular style */
+
+header {
+
+    background-image: url(assets/hero-bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-section {
+    height: 100vh;
+    position: relative;
+}
+
+.banner-section .circle {
+    position: absolute;
+    width: 280px;
+    height: 290px;
+    left: 485px;
+    bottom: 300px;
+}
+
+.banner-section .micro {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    left: 580px;
+    bottom: 400px;
+}
+
+.banner-section .new {
+    border: none;
+    border-radius: 10000px;
+    cursor: pointer;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    padding: 8px 16px 8px 16px;
+    position: absolute;
+    left: 700px;
+    top: 20px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 14px;
+    position: absolute;
+    top: 350px;
+    left: 430px;
+}
+
+.banner-content h2 {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+}
+
+.banner-content h6 {
+    color: #FFFFFF;
+    font-size: .75rem;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: center;
+}
+
+.banner-btn .btn-1 {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10000px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+
+}
+
+.banner-btn .btn-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 10000px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+}
+
+
+
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-section h2 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+
+h2 .wave {
+    background: linear-gradient(to bottom, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* WebKit=browser rendering engine */
+}
+
+.nav-section .menu {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10000px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+
+}
+
+
 
 .about-context {
     text-align: center;
@@ -91,25 +246,13 @@ body {
 .card p {
     color: #FFFFFF;
     font-size: .75rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 20px;
 
 }
 
-.tech-container .tech-head {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-
 #TechWave-section {
     background-color: rgba(35, 14, 61, 1);
-}
-
-.tech-container .container-head {
-    text-align: center;
 }
 
 .tech-cards {
@@ -117,8 +260,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     gap: 30px;
-
-
 }
 
 .tech-cards .card {
@@ -135,7 +276,6 @@ body {
 .tech-cards .card img {
     width: 50px;
     height: 50px;
-    /* margin-top: 20px; */
 }
 
 .tech-cards .card h4 {
@@ -143,12 +283,7 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 29px;
-    /* margin-bottom: 16px; */
 }
-
-/* .tech-cards .card p {
-    line-height: 30px;
-} */
 
 
 .card1 {
@@ -168,11 +303,6 @@ body {
 }
 
 
-
-
-.episod-section .container-head {
-    text-align: center;
-}
 
 .episod-section .episod-cards {
 
@@ -250,9 +380,6 @@ body {
     gap: 20px;
 }
 
-.host-section .container-head {
-    text-align: center;
-}
 
 .host-bio {
 
@@ -313,7 +440,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    /* border: 2px solid salmon; */
+
 }
 
 .footer-container {
@@ -388,7 +515,7 @@ h1 .wave {
     .tech-container,
     .featured-container,
     .footer-container {
-        /* width: 100%; */
+
         width: auto;
         margin: 0 auto;
     }
