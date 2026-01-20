@@ -64,15 +64,21 @@ header {
     height: 80vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .banner-img {
     position: relative;
     width: 280px;
-    transform: tanslateY(-80px);
-    border: 2px solid wheat;
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(-80px);
+
+
 }
 
 .banner-img .circle {
@@ -98,7 +104,7 @@ header {
     background-color: #00FF88;
     color: #1A0B2E;
     padding: 8px 16px;
-    right: -20px;
+    right: 0;
     top: 0;
     cursor: pointer;
 }
@@ -536,7 +542,8 @@ h1 .wave {
     .about-container,
     .tech-container,
     .featured-container,
-    .footer-container {
+    .footer-container,
+    .nav-section {
 
         width: auto;
         margin: 0 auto;
@@ -586,13 +593,14 @@ h1 .wave {
 
     .banner-section {
         height: 55vh;
-        border: 2px solid wheat;
+
     }
 
     .banner-img {
         width: 120px;
-        border: 2px solid wheat;
+
         transform: translateY(-90px);
+        /* transform: none; */
     }
 
     .banner-img .micro {
